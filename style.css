@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 650px;
+    height: 520px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgb(176, 176, 176);
+    
+}
+
+.top-box{
+    height: 50%;
+    background-color: white;
+    
+}
+h2{
+    color:hsl(179, 62%, 43%) ;
+    font-weight: 700;
+}
+h3{
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+}
+span{
+    color:hsl(218, 22%, 67%) ;
+}
+
+.info{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.first-text{
+    margin-bottom: 30px;
+}
+.second-text{
+    margin-bottom: 20px;
+}
+.third-text{
+    line-height: 1.8rem;
+    margin-right: 40px;
+}
+
+.bottom-box{
+    height: 50%;
+    display: flex;
+    color: white;
+}
+
+.bottom-left{
+    width: 50%;
+    background-color: hsl(179, 62%, 43%);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.price-big{
+    font-size: 32px;
+    font-weight: 700;
+    
+}
+.price-small{
+    opacity: 0.6;
+    font-weight: 400;
+}
+.text{
+    margin-bottom: 30px;
+}
+
+button{
+    width: 100%;
+    padding: 15px;
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+}
+
+.bottom-right{
+    width: 50%;
+    background-color: hsl(179, 61%, 48%);
+    padding: 40px;
+}
+
+.header-text h3{
+    color: white;
+    margin-bottom: 20px;
+}
+
+ul{
+    list-style: none;
+    line-height: 1.3rem;
+    font-weight: 400;
+    color:hsl(204, 43%, 93%) ;
+    opacity: 0.8;
+}
+
+
+@media screen and (max-width:650px) {
+    body{
+        overflow: scroll;
+    }
+
+    .container{
+        display:flex;
+        flex-direction: column;
+        width: 85%;
+        height: 80%;
+        overflow: scroll;
+    }
+    .top-box{
+        height: 100%;
+    }
+    .info{
+        padding: 30px;
+    }
+    .bottom-box{
+        flex-direction: column;
+        height: 66.6%;
+        width: 100%;
+    }
+    .bottom-left{
+        width: 100%;
+        padding: 30px;
+    }
+    .bottom-right{
+        width: 100%;
+        padding: 30px;
+    }
+
+    .btn{
+        margin-right: 60px;
+    }
+
+    .third-text{
+        margin-right: 0;
+    }
+}
+
+
